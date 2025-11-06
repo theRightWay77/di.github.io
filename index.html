@@ -1,55 +1,68 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Мой первый сайт</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FabLab Алания</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      background-color: #f9f9f9;
-      color: #333;
+      background-color: #FFFFFF;
+      color: #212121;
       text-align: center;
-      padding: 40px 20px;
-    }
-    h1 {
-      color: #2c3e50;
-    }
-    
-    .card {
-      background: white;
+      margin: 0;
       padding: 20px;
-      margin: 90px auto;  
-      max-width: 500px;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     }
-    button {
-      background-color: #3498db;
+
+    h1 {
+      color: #D32F2F;
+      font-size: 2.5em;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 1.2em;
+      max-width: 600px;
+      margin: 0 auto 25px;
+      line-height: 1.5;
+    }
+
+    .highlight {
+      color: #D32F2F;
+      font-weight: bold;
+    }
+
+    .btn-instagram {
+      display: inline-block;
+      background: #2f6bd3;
       color: white;
-      border: none;
-      padding: 10px 20px;
-      font-size: 16px;
-      border-radius: 5px;
-      cursor: pointer;
-      margin-top: 10px;
+      text-decoration: none;
+      padding: 12px 24px;
+      border-radius: 4px;
+      font-size: 1.1em;
+      font-weight: bold;
+      transition: background 0.3s;
     }
-    button:hover {
-      background-color: #2980b9;
+
+    .btn-instagram:hover {
+      background: #0641a6;
+      transform: translateY(-2px);
+    }
+
+    .yellow-accent {
+      color: #FFC107;
     }
   </style>
 </head>
 <body>
-  <div class="card">
-    <h1>Привет, это мой первый сайт!</h1>
-    <p>Я учусь верстать на HTML и CSS.</p>
-    <button onclick="showAlert()">Нажми меня</button>
-  </div>
+  <h1>Добро пожаловать в FabLab!</h1>
+  <p>Пространство для творчества, обучения и технологий в Северной Осетии.</p>
+  <p>Мы объединяем <span class="highlight">студентов</span>, <span class="highlight">школьников</span> и <span class="highlight">энтузиастов</span>.</p>
 
-  <script>
-    function showAlert() {
-      alert('Поздравляю! Ты только что запустил JavaScript 🎉');
-    }
-  </script>
+  <a href="https://t.me/fablab_alania" 
+     target="_blank" 
+     class="btn-instagram">
+    Подписаться в Telegram
+  </a>
 </body>
 </html>
